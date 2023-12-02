@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46cd6cae-5e96-413a-885e-c3aaf714fe48" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/day1/Main.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/day1/input-task2-test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/day1/input-test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/day1/MainKtTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/day2/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/day2/input-test.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../demo/src/main/kotlin/com/example/demo/BlockingUserController.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../kotlin-springboot-coroutines-workshop-labs/src/test/kotlin/org/course/maria/MariaTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,11 +21,12 @@
       <list>
         <option value="Kotlin Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -52,7 +52,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "com.github.copilot.settings.ApplicationConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -67,23 +67,7 @@
       <recent name="day1" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.MainKt">
-    <configuration name="MainKtTest.getFirstAndLastNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="advent-of-code-2023" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="day1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="day1" />
-      <option name="MAIN_CLASS_NAME" value="day1.MainKtTest" />
-      <option name="METHOD_NAME" value="getFirstAndLastNumber" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Kotlin.MainKt (1)">
     <configuration name="MainKtTest.getFirstAndLastNumberPart2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="advent-of-code-2023" />
       <extension name="coverage">
@@ -132,6 +116,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainKt (1)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day2.MainKt" />
+      <module name="advent-of-code-2023" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="day1.MainKt" />
       <module name="advent-of-code-2023" />
@@ -154,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.MainKt (1)" />
         <item itemvalue="Kotlin.MainKt" />
         <item itemvalue="JUnit.MainKtTest.task2 test" />
         <item itemvalue="JUnit.MainKtTest.getFirstAndLastNumberPart2" />
         <item itemvalue="JUnit.MainKtTest.task1 small" />
-        <item itemvalue="JUnit.MainKtTest.getFirstAndLastNumber" />
       </list>
     </recent_temporary>
   </component>
@@ -173,11 +164,15 @@
       <workItem from="1701418131249" duration="488000" />
       <workItem from="1701418641735" duration="745000" />
       <workItem from="1701432287552" duration="818000" />
-      <workItem from="1701433130925" duration="3991000" />
+      <workItem from="1701433130925" duration="9492000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
