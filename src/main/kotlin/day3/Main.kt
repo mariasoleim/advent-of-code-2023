@@ -16,14 +16,32 @@ class Day3(filePath: String) {
     }
 
     fun task2(): Int {
-        return 0
+        val gears = getSymbolLocations('*')
+            .filter { getPartNumbers(it).size == 2 }
+        return gears.sumOf { getGearRatio(it) }
     }
 
-    private fun getSymbolLocations(): List<Pair<Int, Int>> {
+    private fun getGearRatio(gearLocation: Pair<Int, Int>): Int {
+        val partNumbers = getPartNumbers(gearLocation)
+        return partNumbers[0] * partNumbers[1]
+    }
+
+    private fun getPartNumbers(coordinate: Pair<Int, Int>): List<Int> {
+        return getAdjacentCoordinatesWithDigits(coordinate)
+            .map { getCoordinatesForFirstDigitInNumberAtCoordinate(it) }.toSet()
+            .map { getNumberBeginningAtCoordinate(it) }
+    }
+
+    private fun getSymbolLocations(symbol: Char? = null): List<Pair<Int, Int>> {
         val result = mutableListOf<Pair<Int, Int>>()
         rows.forEachIndexed { indexRow, row -> run {
             row.forEachIndexed { indexColumn, column -> run {
-                if (!column.isDigit() && column != '.') {
+                if (symbol != null) {
+                    if (column == symbol) {
+                        result.add(Pair(indexRow, indexColumn))
+                    }
+                }
+                else if (!column.isDigit() && column != '.') {
                     result.add(Pair(indexRow, indexColumn))
                 }
             } }
@@ -76,9 +94,9 @@ fun main() {
     val result = Day3("./src/main/kotlin/day3/input.txt").task1()
     println("Task 1 result: $result")
 
-//    val testResult2 = task2("./src/main/kotlin/day2/input-test.txt")
-//    println("Task 2 test result: $testResult2")
-//
-//    val result2 = task2("./src/main/kotlin/day2/input.txt")
-//    println("Task 2 result: $result2")
+    val testResult2 = Day3("./src/main/kotlin/day3/input-test.txt").task2()
+    println("Task 2 test result: $testResult2")
+
+    val result2 = Day3("./src/main/kotlin/day3/input.txt").task2()
+    println("Task 2 result: $result2")
 }
