@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="facade_dump@facade.pg.prod.finn.no">
+  <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.49">
+    <root id="1"/>
+    <database id="2" parent="1" name="facade_dump">
+      <Current>1</Current>
+      <ObjectId>16704</ObjectId>
+      <OwnerName>postgres</OwnerName>
+    </database>
+    <database id="3" parent="1" name="postgres">
+      <Comment>default administrative connection database</Comment>
+      <ObjectId>13569</ObjectId>
+      <OwnerName>postgres</OwnerName>
+    </database>
+    <role id="4" parent="1" name="pg_monitor">
+      <ObjectId>3373</ObjectId>
+      <RoleGrants>3374
+3375
+3377</RoleGrants>
+    </role>
+    <role id="5" parent="1" name="pg_read_all_settings">
+      <ObjectId>3374</ObjectId>
+    </role>
+    <role id="6" parent="1" name="pg_read_all_stats">
+      <ObjectId>3375</ObjectId>
+    </role>
+    <role id="7" parent="1" name="pg_stat_scan_tables">
+      <ObjectId>3377</ObjectId>
+    </role>
+    <role id="8" parent="1" name="pg_signal_backend">
+      <ObjectId>4200</ObjectId>
+    </role>
+    <role id="9" parent="1" name="dwh">
+      <CanLogin>1</CanLogin>
+      <ObjectId>16384</ObjectId>
+    </role>
+    <role id="10" parent="1" name="prometheus">
+      <CanLogin>1</CanLogin>
+      <ObjectId>16385</ObjectId>
+      <RoleGrants>3375</RoleGrants>
+    </role>
+    <role id="11" parent="1" name="replicator">
+      <CanLogin>1</CanLogin>
+      <ObjectId>16388</ObjectId>
+      <Replication>1</Replication>
+    </role>
+    <role id="12" parent="1" name="facade_dump_admin">
+      <CanLogin>1</CanLogin>
+      <ObjectId>16701</ObjectId>
+    </role>
+    <role id="13" parent="1" name="facade_dump_user">
+      <CanLogin>1</CanLogin>
+      <ObjectId>16702</ObjectId>
+    </role>
+    <role id="14" parent="1" name="facade_dump_read">
+      <ObjectId>16703</ObjectId>
+    </role>
+    <role id="15" parent="1" name="postgres">
+      <BypassRls>1</BypassRls>
+      <CanLogin>1</CanLogin>
+      <CreateDb>1</CreateDb>
+      <CreateRole>1</CreateRole>
+      <ObjectId>10</ObjectId>
+      <Replication>1</Replication>
+      <SuperRole>1</SuperRole>
+    </role>
+    <role id="16" parent="1" name="standby">
+      <CanLogin>1</CanLogin>
+      <ObjectId>111254500</ObjectId>
+      <Replication>1</Replication>
+    </role>
+    <role id="17" parent="1" name="admin">
+      <CreateDb>1</CreateDb>
+      <ObjectId>134735852</ObjectId>
+      <RoleGrants>134735853</RoleGrants>
+    </role>
+    <role id="18" parent="1" name="cron_admin">
+      <ObjectId>134735853</ObjectId>
+    </role>
+    <role id="19" parent="1" name="zalandos">
+      <ObjectId>134735854</ObjectId>
+    </role>
+    <role id="20" parent="1" name="robot_zmon">
+      <ObjectId>134735855</ObjectId>
+    </role>
+    <tablespace id="21" parent="1" name="pg_default">
+      <ObjectId>1663</ObjectId>
+      <StateNumber>1</StateNumber>
+      <OwnerName>postgres</OwnerName>
+    </tablespace>
+    <tablespace id="22" parent="1" name="pg_global">
+      <ObjectId>1664</ObjectId>
+      <StateNumber>1</StateNumber>
+      <OwnerName>postgres</OwnerName>
+    </tablespace>
+    <schema id="23" parent="2" name="information_schema">
+      <ObjectId>13278</ObjectId>
+      <StateNumber>353</StateNumber>
+      <OwnerName>postgres</OwnerName>
+    </schema>
+    <schema id="24" parent="2" name="metric_helpers">
+      <ObjectId>134736160</ObjectId>
+      <StateNumber>1054327736</StateNumber>
+      <OwnerName>postgres</OwnerName>
+    </schema>
+    <schema id="25" parent="2" name="pg_catalog">
+      <Comment>system catalog schema</Comment>
+      <ObjectId>11</ObjectId>
+      <StateNumber>350</StateNumber>
+      <OwnerName>postgres</OwnerName>
+    </schema>
+    <schema id="26" parent="2" name="public">
+      <Comment>standard public schema</Comment>
+      <Current>1</Current>
+      <ObjectId>2200</ObjectId>
+      <StateNumber>351</StateNumber>
+      <OwnerName>postgres</OwnerName>
+    </schema>
+    <schema id="27" parent="2" name="user_management">
+      <ObjectId>134736123</ObjectId>
+      <StateNumber>1054327698</StateNumber>
+      <OwnerName>postgres</OwnerName>
+    </schema>
+  </database-model>
+</dataSource>

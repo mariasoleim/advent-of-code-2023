@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="dash@searchmanagement.pg.prod.finn.no">
+  <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.49">
+    <root id="1">
+      <ServerVersion>14.8</ServerVersion>
+      <StartupTime>1697797495</StartupTime>
+    </root>
+    <database id="2" parent="1" name="dash">
+      <Current>1</Current>
+      <ObjectId>16432</ObjectId>
+      <OwnerName>dash_admin</OwnerName>
+    </database>
+    <database id="3" parent="1" name="attributes">
+      <ObjectId>16427</ObjectId>
+      <OwnerName>postgres</OwnerName>
+    </database>
+    <database id="4" parent="1" name="attribute">
+      <ObjectId>16428</ObjectId>
+      <OwnerName>postgres</OwnerName>
+    </database>
+    <database id="5" parent="1" name="adpoller">
+      <ObjectId>16429</ObjectId>
+      <OwnerName>postgres</OwnerName>
+    </database>
+    <database id="6" parent="1" name="autocomplete">
+      <ObjectId>16430</ObjectId>
+      <OwnerName>postgres</OwnerName>
+    </database>
+    <database id="7" parent="1" name="emailsender">
+      <ObjectId>16431</ObjectId>
+      <OwnerName>postgres</OwnerName>
+    </database>
+    <database id="8" parent="1" name="hello_nordics">
+      <ObjectId>16433</ObjectId>
+      <OwnerName>postgres</OwnerName>
+    </database>
+    <database id="9" parent="1" name="search_products">
+      <ObjectId>16434</ObjectId>
+      <OwnerName>search_products_admin</OwnerName>
+    </database>
+    <database id="10" parent="1" name="search">
+      <ObjectId>16435</ObjectId>
+      <OwnerName>postgres</OwnerName>
+    </database>
+    <database id="11" parent="1" name="search_versions">
+      <ObjectId>16436</ObjectId>
+      <OwnerName>search_versions_admin</OwnerName>
+    </database>
+    <database id="12" parent="1" name="postgres">
+      <Comment>default administrative connection database</Comment>
+      <ObjectId>16437</ObjectId>
+      <OwnerName>postgres</OwnerName>
+    </database>
+  </database-model>
+</dataSource>
