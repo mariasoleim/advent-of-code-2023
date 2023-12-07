@@ -5,14 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46cd6cae-5e96-413a-885e-c3aaf714fe48" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/day4/Main.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/day7/Main.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/day7/input-test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dayx/Main.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/day7/HandTest.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../demo/src/main/kotlin/com/example/demo/BlockingUserController.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../kotlin-springboot-coroutines-workshop-labs/src/test/kotlin/org/course/maria/MariaTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/day7/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/day7/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/day7/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/day7/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/day7/HandTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/day7/HandTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +71,7 @@
     </key>
   </component>
   <component name="RunManager" selected="Kotlin.MainKt (3)">
-    <configuration name="HandTest.compare" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HandTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="advent-of-code-2023" />
       <extension name="coverage">
         <pattern>
@@ -83,22 +81,55 @@
       </extension>
       <option name="PACKAGE_NAME" value="day7" />
       <option name="MAIN_CLASS_NAME" value="day7.HandTest" />
-      <option name="METHOD_NAME" value="compare" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HandTest.allJokers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="advent-of-code-2023" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day7.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="day7" />
+      <option name="MAIN_CLASS_NAME" value="day7.HandTest" />
+      <option name="METHOD_NAME" value="allJokers" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainKt (1)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day2.MainKt" />
+    <configuration name="HandTest.fourJokers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="advent-of-code-2023" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day7.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="day7" />
+      <option name="MAIN_CLASS_NAME" value="day7.HandTest" />
+      <option name="METHOD_NAME" value="fourJokers" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainKt (2)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day3.MainKt" />
+    <configuration name="HandTest.getTypeWithMostJokers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="advent-of-code-2023" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day7.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="day7" />
+      <option name="MAIN_CLASS_NAME" value="day7.HandTest" />
+      <option name="METHOD_NAME" value="getTypeWithMostJokers" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -110,20 +141,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day1.MainKt" />
-      <module name="advent-of-code-2023" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Kotlin.MainKt (3)" />
-        <item itemvalue="JUnit.HandTest.compare" />
-        <item itemvalue="Kotlin.MainKt (2)" />
-        <item itemvalue="Kotlin.MainKt (1)" />
-        <item itemvalue="Kotlin.MainKt" />
+        <item itemvalue="JUnit.HandTest.fourJokers" />
+        <item itemvalue="JUnit.HandTest.allJokers" />
+        <item itemvalue="JUnit.HandTest" />
+        <item itemvalue="JUnit.HandTest.getTypeWithMostJokers" />
       </list>
     </recent_temporary>
   </component>
@@ -141,7 +165,7 @@
       <workItem from="1701433130925" duration="12006000" />
       <workItem from="1701621039761" duration="7491000" />
       <workItem from="1701936462310" duration="2465000" />
-      <workItem from="1701940512712" duration="7295000" />
+      <workItem from="1701940512712" duration="15571000" />
     </task>
     <servers />
   </component>
