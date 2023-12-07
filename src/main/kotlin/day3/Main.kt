@@ -10,9 +10,8 @@ class Day3(filePath: String) {
 
     fun task1(): Int {
         return getSymbolLocations()
-            .flatMap { getAdjacentCoordinatesWithDigits(it) }
-            .map { getCoordinatesForFirstDigitInNumberAtCoordinate(it) }.toSet()
-            .sumOf { getNumberBeginningAtCoordinate(it) }
+            .flatMap { getPartNumbers(it) }
+            .sum()
     }
 
     fun task2(): Int {
@@ -89,14 +88,14 @@ class Day3(filePath: String) {
 }
 fun main() {
     val testResult = Day3("./src/main/kotlin/day3/input-test.txt").task1()
-    println("Task 1 test result: $testResult")
+    println("Task 1 test result: $testResult") // 4361
 
     val result = Day3("./src/main/kotlin/day3/input.txt").task1()
-    println("Task 1 result: $result")
+    println("Task 1 result: $result") // 512794
 
     val testResult2 = Day3("./src/main/kotlin/day3/input-test.txt").task2()
-    println("Task 2 test result: $testResult2")
+    println("Task 2 test result: $testResult2") // 467835
 
     val result2 = Day3("./src/main/kotlin/day3/input.txt").task2()
-    println("Task 2 result: $result2")
+    println("Task 2 result: $result2") // 67779080
 }

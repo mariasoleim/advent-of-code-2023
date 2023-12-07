@@ -7,7 +7,6 @@
     <list default="true" id="46cd6cae-5e96-413a-885e-c3aaf714fe48" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/../demo/src/main/kotlin/com/example/demo/BlockingUserController.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../kotlin-springboot-coroutines-workshop-labs/src/test/kotlin/org/course/maria/MariaTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/day3/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/day3/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -144,6 +143,7 @@
       <workItem from="1701433130925" duration="12006000" />
       <workItem from="1701621039761" duration="7491000" />
       <workItem from="1701936462310" duration="2465000" />
+      <workItem from="1701940512712" duration="559000" />
     </task>
     <servers />
   </component>
