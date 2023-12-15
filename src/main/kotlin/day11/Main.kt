@@ -1,94 +1,107 @@
 package day11
 
 import day1.readFileAsLinesUsingUseLines
-import kotlin.math.abs
 
-data class Galaxy(val id: Int, val coordinates: Pair<Int, Int>) {
-
-    fun getDistanceTo(other: Galaxy): Int {
-        return abs(coordinates.first - other.coordinates.first) +
-            abs(coordinates.second - other.coordinates.second)
-    }
+data class Galaxy(val coordinates: Pair<Int, Int>) {
 }
 data class Image(val rows: List<List<Char>>) {
 
     fun getGalaxies(): List<Galaxy> {
         val galaxies = mutableListOf<Galaxy>()
-        var galaxyId = 0
         rows.forEachIndexed { rowIndex, row ->
             row.forEachIndexed { colIndex, spaceItem ->
                 if (spaceItem == '#') {
-                    galaxies.add(Galaxy(galaxyId, Pair(rowIndex, colIndex)))
+                    galaxies.add(Galaxy(Pair(rowIndex, colIndex)))
                 }
             }
         }
         return galaxies.toList()
     }
-    private fun expand(): Image {
-        val expanded = mutableListOf<MutableList<Char>>()
-        rows.forEach {
-            expanded.add(it.toMutableList())
-            if (it.all { spaceItem -> spaceItem == '.' }) {
-                expanded.add(it.toMutableList())
+
+    fun getEmptyRows(): List<Int> {
+        return rows.mapIndexed { index, row ->
+            if (row.all { it == '.' }) {
+                index
+            } else {
+                null
             }
-        }
-        val colIndicesToExpand = mutableListOf<Int>()
-        rows[0].forEachIndexed { colIndex, _ ->
-            if (isColAllEmptySpace(colIndex)) {
-                colIndicesToExpand.add(colIndex)
-            }
-        }
-        colIndicesToExpand.reversed().forEach { colIndex ->
-            expanded.forEach { row -> row.add(colIndex + 1, '.') }
-        }
-        return Image(expanded)
+        }.filterNotNull()
     }
 
-    private fun isColAllEmptySpace(colIndex: Int): Boolean {
-        return rows.all { row -> row[colIndex] == '.' }
+    fun getEmptyCols(): List<Int> {
+        return rows.indices.mapNotNull { colIndex ->
+            val emptyCol = rows.all { it[colIndex] == '.' }
+            if (emptyCol) {
+                colIndex
+            } else {
+                null
+            }
+        }
+    }
+    
+    fun getDistanceBetweenGalaxies(
+        galaxyA: Galaxy, 
+        galaxyB: Galaxy,
+        emptyRows: List<Int>,
+        emptyCols: List<Int>,
+        emptySize: Long
+    ): Long {
+        val galaxyARowIndex = galaxyA.coordinates.first
+        val galaxyAColIndex = galaxyA.coordinates.second
+        val galaxyBRowIndex = galaxyB.coordinates.first
+        val galaxyBColIndex = galaxyB.coordinates.second
+        val verticalRange = if (galaxyARowIndex < galaxyBRowIndex) (galaxyARowIndex + 1.. galaxyBRowIndex) else (galaxyARowIndex - 1 downTo  galaxyBRowIndex)
+        val verticalDistance = verticalRange.sumOf {
+            if (it in emptyRows) emptySize else 1
+        }
+        val horizontalRange = if (galaxyAColIndex < galaxyBColIndex) (galaxyAColIndex + 1 .. galaxyBColIndex) else (galaxyAColIndex - 1 downTo galaxyBColIndex)
+        val horizontalDistance = horizontalRange.sumOf { 
+            if (it in emptyCols) emptySize else 1
+        }
+        return verticalDistance + horizontalDistance
     }
 
     companion object {
         fun fromFile(filePath: String): Image {
-            val image = Image(
+            return Image(
                 readFileAsLinesUsingUseLines(filePath).map { row ->
                     row.map { spaceItem ->
                         spaceItem
                     }
                 }
             )
-            return image.expand()
         }
     }
 }
 
-fun task1(filePath: String): Int {
+fun task(filePath: String, emptySpaceSize: Long): Long {
     val image = Image.fromFile(filePath)
+    val emptyRows = image.getEmptyRows()
+    val emptyCols = image.getEmptyCols()
     val galaxies = image.getGalaxies()
-    var sumDistance = 0
+    var sumDistance: Long = 0
     galaxies.forEachIndexed { firstIndex, galaxy ->
         galaxies.subList(firstIndex, galaxies.size).forEach { otherGalaxy ->
-            val distance = galaxy.getDistanceTo(otherGalaxy)
+            val distance = image.getDistanceBetweenGalaxies(galaxy, otherGalaxy, emptyRows, emptyCols, emptySpaceSize)
             sumDistance += distance
         }
     }
     return sumDistance
 }
 
-fun task2(filePath: String): Int {
-    return 0
-}
-
 fun main() {
-    val testResult = task1("./src/main/kotlin/day11/input-test.txt")
+    val testResult = task("./src/main/kotlin/day11/input-test.txt", 2)
     println("Task 1 test result: $testResult")
 
-    val result = task1("./src/main/kotlin/day11/input.txt")
+    val result = task("./src/main/kotlin/day11/input.txt", 2)
     println("Task 1 result: $result")
 
-//    val testResult2 = task2("./src/main/kotlin/day11/input-test.txt")
-//    println("Task 2 test result: $testResult2")
-//
-//    val result2 = task2("./src/main/kotlin/day11/input.txt")
-//    println("Task 2 result: $result2")
+    val testResult2Ten = task("./src/main/kotlin/day11/input-test.txt", 10)
+    println("Task 2 test result with 10 as empty space size: $testResult2Ten")
+
+    val testResult2Hundred = task("./src/main/kotlin/day11/input-test.txt", 100)
+    println("Task 2 test result with 100 as empty space size: $testResult2Hundred")
+
+    val result2 = task("./src/main/kotlin/day11/input.txt", 1000000)
+    println("Task 2 result: $result2")
 }

@@ -5,35 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46cd6cae-5e96-413a-885e-c3aaf714fe48" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/day11/Main.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/day11/input-test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/day11/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dayy/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/day11/Day11Test.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../demo/src/main/kotlin/com/example/demo/BlockingUserController.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kotlin-springboot-coroutines-workshop-labs/labs.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../kotlin-springboot-coroutines-workshop-labs/src/test/kotlin/org/course/maria/MariaTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3ca692af-969d-47e7-8a2d-5dad6b5f1248.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/48510b82-8e99-48c9-893c-c119545e66d0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5b2dbf1f-03cb-4e32-8fb4-02d3a1cc6cd7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5ee2824a-0989-498d-82e1-102b9f4842fd.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6918bf63-2d0c-4739-adbc-c465fe694824.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/691ad698-447c-4059-bfa0-3d60cfc68973.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7abc2ca5-a4f5-4f6f-99de-b0b4658eac5f.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7d7f7a8b-a68d-4e76-9b00-16cf468d11fe.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/81cdd0fd-48ac-4da2-a8e3-00206d454a8d.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/865231d0-b29d-49e7-9703-0bb4949b4d0b.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a23fb58b-9e97-4f4a-a502-bd790daf7975.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b1133ef9-4edb-4b1b-9d1d-fd9ffbf55dd5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/bb35b9f8-d4b6-424a-a12b-1d17f8344a0f.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cbb07a9d-f698-43a3-937b-25daff3b0d5f.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d77bad42-ea37-4298-bd76-6f23eead5cce.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/db1fa5a0-64cd-4b3f-b63f-328b63f2183b.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e1655ffc-533f-46a2-9c27-9a521ab4a726.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e7e13624-6f2c-40ec-99c8-238f5c8c9b6f.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e9ad5c38-e3b9-4d95-9220-652173a71575.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f3317346-8c0e-4eff-8b7b-6e1f94c57345.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f82df438-854d-44e8-a56f-113d3f3ae75b.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../temp/.idea/temp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../temp/first" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../temp/second" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dayx/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dayx/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/day11/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/day11/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,25 +41,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/maria.soleim@schibsted.com/dev/not-search/advent-of-code-2023/src/main/kotlin&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.github.copilot.settings.ApplicationConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "/Users/maria.soleim@schibsted.com/dev/not-search/advent-of-code-2023/src/main/kotlin",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "com.github.copilot.settings.ApplicationConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/kotlin" />
@@ -89,22 +70,24 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="day11" />
       <recent name="day7" />
       <recent name="day1" />
     </key>
   </component>
   <component name="RunManager" selected="Kotlin.MainKt">
-    <configuration name="HandTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Day11Test.getEmptyRowsAndCols" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="advent-of-code-2023" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day7.*" />
+          <option name="PATTERN" value="day11.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="day7" />
-      <option name="MAIN_CLASS_NAME" value="day7.HandTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="day11" />
+      <option name="MAIN_CLASS_NAME" value="day11.Day11Test" />
+      <option name="METHOD_NAME" value="getEmptyRowsAndCols" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -158,10 +141,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Kotlin.MainKt" />
+        <item itemvalue="JUnit.Day11Test.getEmptyRowsAndCols" />
         <item itemvalue="Kotlin.MainKt (3)" />
         <item itemvalue="JUnit.HandTest.fourJokers" />
         <item itemvalue="JUnit.HandTest.allJokers" />
-        <item itemvalue="JUnit.HandTest" />
       </list>
     </recent_temporary>
   </component>
@@ -180,12 +163,25 @@
       <workItem from="1701621039761" duration="7491000" />
       <workItem from="1701936462310" duration="2465000" />
       <workItem from="1701940512712" duration="16923000" />
-      <workItem from="1702332078336" duration="4371000" />
+      <workItem from="1702332078336" duration="5288000" />
+      <workItem from="1702542021351" duration="711000" />
+      <workItem from="1702659464060" duration="6789000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/day11/Main.kt</url>
+          <line>84</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
