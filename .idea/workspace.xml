@@ -5,15 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46cd6cae-5e96-413a-885e-c3aaf714fe48" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/day11/Day11Test.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/scripts/download_aoc_input.sh" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../demo/src/main/kotlin/com/example/demo/BlockingUserController.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../kotlin-springboot-coroutines-workshop-labs/labs.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../kotlin-springboot-coroutines-workshop-labs/src/test/kotlin/org/course/maria/MariaTest.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../temp/.idea/temp.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../temp/first" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../temp/second" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/day11/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/day11/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/day11/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/day11/input.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +53,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -165,23 +165,12 @@
       <workItem from="1701940512712" duration="16923000" />
       <workItem from="1702332078336" duration="5288000" />
       <workItem from="1702542021351" duration="711000" />
-      <workItem from="1702659464060" duration="6789000" />
+      <workItem from="1702659464060" duration="7908000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/day11/Main.kt</url>
-          <line>84</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
