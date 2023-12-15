@@ -3,10 +3,7 @@ YEAR=$(date '+%Y')
 DAY=$(date '+%d')
 DAY_NO_ZEROS="${DAY//0/}"
 
-echo $YEAR
-echo $DAY
-
-cp -r /Users/maria.soleim@schibsted.com/dev/not-search/advent-of-code-2023/src/main/kotlin/dayy /Users/maria.soleim@schibsted.com/dev/not-search/advent-of-code-2023/src/main/kotlin/day${DAY}
+cp -r /Users/maria.soleim@schibsted.com/dev/not-search/advent-of-code-2023/src/main/kotlin/template /Users/maria.soleim@schibsted.com/dev/not-search/advent-of-code-2023/src/main/kotlin/day${DAY}
 
 AOC_SESSION_COOKIE="GET_FROM_BROWSER"
 
