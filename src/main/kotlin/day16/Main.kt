@@ -59,7 +59,7 @@ data class Grid(val rows: List<MutableList<Tile>>) {
         }
     }
 
-    fun moveLight(movement: Movement, history: MutableList<Movement>) {
+    fun moveLight(movement: Movement, history: MutableList<Movement> = mutableListOf()) {
 
         val goingInCircle = history.any { it.matches(movement) }
         if (goingInCircle) return
@@ -144,12 +144,22 @@ enum class Direction {
 
 fun part1(filePath: String): Int {
     val grid = Grid.fromFile(filePath)
-    grid.moveLight(Movement(grid.rows[0][0], Direction.RIGHT), mutableListOf())
+    grid.moveLight(Movement(grid.rows[0][0], Direction.RIGHT))
     return grid.countEnergized()
 }
 
 fun part2(filePath: String): Int {
-    return 0
+    val grid = Grid.fromFile(filePath)
+    val fromTopRow = grid.rows[0].indices.map { Movement(grid.rows[0][it], Direction.DOWN) }
+    val fromBottomRow = grid.rows[0].indices.map { Movement(grid.rows[grid.rows[0].size - 1][it], Direction.UP) }
+    val fromLeftCol = grid.rows.indices.map { Movement(grid.rows[it][0], Direction.RIGHT) }
+    val fromRightCol = grid.rows.indices.map { Movement(grid.rows[it][grid.rows.size - 1], Direction.LEFT) }
+    val allStartMovements = fromTopRow + fromBottomRow + fromLeftCol + fromRightCol
+    return allStartMovements.maxOf {
+        val gridForThisMovement = Grid.fromFile(filePath)
+        gridForThisMovement.moveLight(it)
+        gridForThisMovement.countEnergized()
+    }
 }
 
 fun main() {
@@ -159,9 +169,9 @@ fun main() {
     val result = part1("./src/main/kotlin/day16/input.txt")
     println("Task 1 result: $result")
 
-//    val testResult2 = task2("./src/main/kotlin/day16/input-test.txt")
-//    println("Task 2 test result: $testResult2")
-//
-//    val result2 = task2("./src/main/kotlin/day16/input.txt")
-//    println("Task 2 result: $result2")
+    val testResult2 = part2("./src/main/kotlin/day16/input-test.txt")
+    println("Task 2 test result: $testResult2")
+
+    val result2 = part2("./src/main/kotlin/day16/input.txt")
+    println("Task 2 result: $result2")
 }
